@@ -7,26 +7,37 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background: rgb(21, 6, 49);
 }
 nav{
     background-color: purple;
 }
 .container{
-    width: 70%;
+    width: 75%;
     margin:0 auto;
+    overflow: hidden;
 }
 .nav-main{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
+
 .logo-side{
-    width: 10%;
-    height: 51px;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+}
+.logo-side h2 {
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-left: 5px;
 }
 .logo-side img{
-    width: 41%;
+    width: 32%;
 }
 .navmanu{
     width: 85%;
@@ -57,4 +68,82 @@ ul.navbar .nav-item .manu-link {
     text-decoration: none;
     color: white;
     text-transform: capitalize;
+    font-size: 0.9rem;
+    padding: 0px 8px;
+    display: inline-block;
+    border: 1px solid purple;
+}
+
+li.nav-item:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.navbar .nav-item .manu-link img {
+    width: 95%;
+}
+li.nav-item:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a.manu-link.icon-img{
+    border: none;
+}
+a.manu-link.icon-img:hover{
+    border: none;
+}
+
+ul.navbar .nav-item .manu-link img {
+    width: 98%;
+}
+ul.navbar .nav-item .manu-link:hover{
+    border: 1px dotted yellowgreen;
+    border-radius: 30px;
+}
+
+
+/* -----------------
+    top-player 
+---------------------*/
+#top-player h1{
+    font-size: 1.5rem;
+    color: #1ac0e9;
+    padding: 10px 0px;
+}
+.player-main-wrapper{
+    width: 95%;
+    display: flex;
+    box-shadow: 0px 0px 10px 0px #3633af;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 21px;
+    margin-bottom: 40px;
+    padding: 10px 10px 23px 10px;
+    border-radius: 20px;
+}
+.player-box-wraper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-row-gap: 22px;
+}
+.player-boxes{
+    display: flex;
+    align-items: center;
+}
+.player-boxes img{
+    width: 20%;
+}
+.player-boxes h2 {
+    color: #ddd;
+    font-size: .8rem;
+    padding-left: 10px;
+    font-weight: 500;
 }
